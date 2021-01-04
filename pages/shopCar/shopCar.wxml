@@ -1,0 +1,27 @@
+<view class='container_shop'>
+  <scroll-view scroll-y='true' class="shopCar">
+    <block wx:for='{{ shopCar }}' wx:key='id'>
+      <view class="type">
+        <view class="type-l">
+          <image mode="widthFix" src="../../assets/images/shop.png"></image>
+        </view>
+        <view class="type-r">
+          <view class="title line1">{{ item.title }}</view>
+          <view class="sub line1">{{ item.substract }}</view>
+          <view class="score_edit">
+            <view class="score">￥{{ item.score }}</view>
+            <view class="edit">
+              <text class="calc" bindtap="calcTotal" data-id='{{item.id}}' data-count='{{-1}}'>-</text>
+              <text class="num">{{ item.num }}</text>
+              <text class="calc" bindtap="calcTotal" data-id='{{item.id}}' data-count='{{1}}'>+</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<view class="tool">
+  <view class="total">积分合计消费：{{ totalPrice }}</view>
+  <view class="toPay" bindtap="toPay">购买({{ totalCount }})</view>
+</view>

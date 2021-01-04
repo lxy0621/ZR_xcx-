@@ -1,0 +1,153 @@
+.container_pay {
+  width: 100%;
+  padding: 20rpx;
+}
+
+/* tip栏 */
+
+.tips {
+  width: 100%;
+  height: 80rpx;
+  background: #e26060;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+
+.container_pay {
+  width: 100%;
+  height: calc(100vh - 80rpx);
+  background: #eee;
+  padding: 20rpx;
+}
+
+/* 二维码区域 */
+
+.qr_code {
+  width: 100%;
+  height: 540rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr_code .code_pic {
+  width: 100%;
+  height: 100%;
+  padding: 40rpx;
+  background: #fff;
+}
+
+.qr_code .code_pic canvas {
+  width: 100%;
+}
+
+.modify {
+  margin-top: 10rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+/* 会员卡区域 */
+
+.vip_card {
+  width: 100%;
+  /* background: #ffffff; */
+  margin-top: 20rpx;
+  padding: 10rpx 0;
+}
+
+/* title start*/
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: bottom;
+}
+
+.title-l {
+  font-weight: 600;
+}
+
+.title-l image {
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: bottom;
+}
+
+.title-l text {
+  vertical-align: bottom;
+}
+
+.title-r {
+  font-size: 28rpx;
+  color: #222;
+}
+
+/* title end*/
+
+.vip_card .content {
+  width: 100%;
+  display: flex;
+  margin-top: 10rpx;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vip_card .content .card {
+  width: 100%;
+  height: 180rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-t {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-t .card_name {
+  color: #fff;
+}
+
+.card-t .card_no {
+  color: #fff;
+}
+
+.card .card-b {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card-b .total_balance {
+  font-weight: bold;
+  font-size: 52rpx;
+  color: #fdd360;
+}
+
+.card-b .card_pay {
+  width: 200rpx;
+  height: 48rpx;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  color: #1a00a6;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+}

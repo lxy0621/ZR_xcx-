@@ -1,0 +1,184 @@
+.container {
+  width: 100%;
+  padding: 20rpx;
+}
+.type {
+  width: 100%;
+  background: #fff;
+  padding: 10rpx;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.type_content {
+  /* background: #ccc; */
+  margin-top: 30rpx;
+  display: flex;
+}
+
+.active {
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e34747;
+  margin-right: 10rpx;
+}
+
+.type1 {
+  width: 160rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+  margin-right: 10rpx;
+}
+
+/* 充值金额 */
+
+.amount {
+  margin-top: 20rpx;
+  width: 100%;
+  background: #fff;
+  padding: 10rpx;
+}
+
+.amount-content {
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+
+.amount-active {
+  width: 300rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  background: #e34747;
+  margin-bottom: 20rpx;
+  color: #fff;
+  display: flex;
+}
+
+.amount-type {
+  width: 300rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  border: 1px solid #e34747;
+  margin-bottom: 20rpx;
+  color: #e34747;
+  display: flex;
+}
+
+.amount-img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount-img image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.amount-text {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.amount-text .text-back {
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.amount-text .text-pay {
+  font-size: 28rpx;
+}
+
+/* 支付方式 */
+
+.payType {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  flex: 2;
+}
+
+.weixin {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weixin image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.weixin .weixin_text {
+  font-size: 28rpx;
+  margin-left: 10rpx;
+  color: #222;
+}
+
+/* 其他充值方式 */
+
+.anotherPay {
+  margin-top: 20rpx;
+  width: 300rpx;
+  height: 80rpx;
+  background: #e34747;
+  color: #fff;
+  border-radius: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 服务协议 */
+
+.fwxy {
+  width: 100%;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cb {
+  transform: scale(0.8, 0.8);
+}
+
+.toPay {
+  width: 500rpx;
+  height: 90rpx;
+  margin: 20rpx auto;
+  border-radius: 45rpx;
+  background: #e34747;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}

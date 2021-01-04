@@ -1,0 +1,8 @@
+<view class="editContainer">
+  <form bindsubmit="editContent" class="editContent">
+    <input class="name" name="name" placeholder="{{ userName }}"></input>
+    <view class="btn">
+      <button form-type="submit" class="editSubmit" style="width:700rpx;height:92rpx;border-radius:46rpx">提交</button>
+    </view>
+  </form>
+</view>

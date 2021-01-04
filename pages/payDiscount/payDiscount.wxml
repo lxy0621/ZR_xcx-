@@ -1,0 +1,46 @@
+<view class="container">
+  <!-- 选择类型 -->
+  <view class="type">
+    <view class="title">请选择汽油卡类型</view>
+    <view class="type_content">
+      <block wx:for='{{ cardType }}' wx:key='id'>
+        <view class="{{activeIndex === index ? 'active':'type1'}}" bind:tap="clickMenu" data-index="{{index}}">{{ item.value }}</view>
+      </block>
+    </view>
+  </view>
+  <!-- 充值金额 -->
+  <view class="amount">
+    <view class="title">充值金额</view>
+    <view class="amount-content">
+      <block wx:for='{{ amountType }}' wx:key='id'>
+        <view class="{{moneyIndex === index ? 'amount-active':'amount-type'}}" bind:tap="clickMoney" data-index="{{index}}">
+          <view class="amount-img">
+            <image mode="widthFix" src="../../assets/images/yuan.png"></image>
+          </view>
+          <view class="amount-text">
+            <text class="text-back">返{{item.backMoney}}</text>
+            <text class="text-pay">充{{item.payMoney}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 支付方式 -->
+  <view class="payType">
+    <view class="title">支付方式</view>
+    <view class="weixin">
+      <image mode="widthFix" src="../../assets/images/weixin_1.png"></image>
+      <view class="weixin_text">微信</view>
+    </view>
+  </view>
+  <!-- 其他充值方式 -->
+  <view class="anotherPay">其他卡或金额充值</view>
+  <!-- 加油服务协议 -->
+  <view class="fwxy">
+    <label class="label">
+      <checkbox class="checkbox cb">购买表示同意《加油服务协议》</checkbox>
+    </label>
+  </view>
+  <!-- 充值 -->
+  <view class="toPay">立即充值</view>
+</view>

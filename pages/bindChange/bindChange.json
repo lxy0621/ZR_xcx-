@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "carKeyboard": "/components/carKeyboard/carKeyboard"
+  },
+  "navigationBarTitleText": "修改绑定信息"
+}

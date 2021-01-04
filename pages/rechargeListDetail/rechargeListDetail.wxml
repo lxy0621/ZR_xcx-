@@ -1,0 +1,28 @@
+<view class="rechargeListDetail">
+  <view class="detail">
+    <view class="detail-money">
+      <view class="title">充值金额</view>
+      <view class="money">￥{{rechargeDetail.recharge_money}}</view>
+    </view>
+    <view class="detail-type">
+      <view class="title">卡类型</view>
+      <view class="value">{{rechargeDetail.card_name}}</view>
+    </view>
+    <view class="detail-type">
+      <view class="title">电子卡号</view>
+      <view class="value">{{rechargeDetail.card_no}}</view>
+    </view>
+    <view class="detail-type">
+      <view class="title">交易时间</view>
+      <view class="value">{{rechargeDetail.recharge_date}}</view>
+    </view>
+    <!-- <view class="detail-type">
+      <view class="title">油号</view>
+      <view class="value">￥{{rechargeDetail.card_no}}</view>
+    </view> -->
+    <!-- <view class="detail-type">
+      <view class="title">卡类型</view>
+      <view class="value">￥{{rechargeDetail.card_name}}</view>
+    </view> -->
+  </view>
+</view>

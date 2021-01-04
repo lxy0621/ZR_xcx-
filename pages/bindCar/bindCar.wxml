@@ -1,0 +1,33 @@
+<view class="container-bindCar">
+  <view class="no_car" wx:if='{{ carList.length == 0 }}'>
+    <view class="content_center">
+      <image mode="widthFix" src="../../assets/images/chongzhi.png"></image>
+      <text>您还没有绑定车辆</text>
+    </view>
+    <navigator url="/pages/bindCarDetail/bindCarDetail" class="bind_button">添加绑定车辆</navigator>
+  </view>
+  <view class="has_car" wx:else>
+    <scroll-view scroll-y='{{ true }}' class="list-content">
+      <block wx:for='{{carList}}' wx:key='card_id'>
+        <view class="list_type">
+          <view class="tof" wx:if='{{ item.enabled == 1 }}'>车牌付</view>
+          <navigator url="/pages/bindChange/bindChange?car_id={{ item.car_id }}&plate_no={{ item.plate_no }}&card_id={{ item.card_id }}&card_no={{ item.card_no }}&enabled={{ item.enabled }}" class="btnEvent">
+            <view class="type_content">
+              <view class="plate">
+                <view class="plate_bd">{{ item.plate_no }}</view>
+              </view>
+            </view>
+            <view class="card_num">
+              <view class="tips">{{ item.card_name }}</view>
+              <view class="car_nub">{{ item.card_no }}</view>
+            </view>
+          </navigator>
+          <view class="relieve">
+            <view class="btn" bindtap="deleteCard" data-id='{{ item.car_id }}'>解绑</view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+    <navigator url="/pages/bindCarDetail/bindCarDetail" class="bind_button">添加绑定车辆</navigator>
+  </view>
+</view>

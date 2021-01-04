@@ -1,0 +1,54 @@
+<view class='container_consume'>
+  <view class="consume">
+    <view>
+      <span class='left'>消费金额：</span>
+      <span class='right'>{{ consume.money }}元</span>
+    </view>
+    <view>
+      <span class='left'>消费数量：</span>
+      <span class='right'>{{ consume.amount }}</span>
+    </view>
+    <view class="line"></view>
+    <view>
+      <span class='left'>交易时间：</span>
+      <span class='right'>{{ consume.trans_time }}</span>
+    </view>
+    <view>
+      <span class='left'>站点名称：</span>
+      <span class='right'>{{ consume.station_name }}</span>
+    </view>
+    <view>
+      <span class='left'>终端编号：</span>
+      <span class='right'>{{ consume.pos_no }}</span>
+    </view>
+    <view>
+      <span class='left'>订单编号：</span>
+      <span class='right'>{{ consume.order_no }}</span>
+    </view>
+    <view>
+      <span class='left'>卡号：</span>
+      <span class='right'>{{ consume.card_no }}</span>
+    </view>
+    <view>
+      <span class='left'>枪号：</span>
+      <span class='right'>{{ consume.gun_no }}</span>
+    </view>
+    <view>
+      <span class='left'>品类名称：</span>
+      <span class='right'>{{ consume.sku_name }}</span>
+    </view>
+    <view>
+      <span class='left'>支付方式：</span>
+      <span class='right'>{{ consume.pay_type_desc }}</span>
+    </view>
+    <view class="line"></view>
+    <view>
+      <span class='left'>员工：</span>
+      <span class='right'>{{ consume.employee_name }}</span>
+    </view>
+    <view>
+      <span class='left'>操作员：</span>
+      <span class='right'>{{ consume.operator_name }}</span>
+    </view>
+  </view>
+</view>

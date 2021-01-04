@@ -1,0 +1,113 @@
+.points_header {
+  width: 100%;
+  height: 320rpx;
+  background-image: linear-gradient(#e34747, #f58080);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_message {
+  margin-bottom: 32rpx;
+  width: 240rpx;
+  height: 200rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_message .points {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.header_message .desc {
+  font-size: 28rpx;
+}
+
+.header_tab .tab_l {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2rpx solid #eee;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.header_tab .tab_r {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.header_tab {
+  position: absolute;
+  bottom: -50rpx;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: calc(100% - 40rpx);
+  height: 100rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 6rpx 1rpx #eee;
+  display: flex;
+  padding: 12rpx 0;
+}
+
+.shop_message {
+  width: 100%;
+  height: calc(100vh - 320rpx);
+  padding: 80rpx 20rpx 40rpx 20rpx;
+  background: #eee;
+}
+
+.recommend {
+  width: 100%;
+  height: 360rpx;
+  background: #fff;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.title .title-l {
+  font-weight: 600;
+}
+
+.title-l image {
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: bottom;
+}
+
+.title-l text {
+  vertical-align: bottom;
+}
+
+.title .title-r {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.rec_content {
+  width: 100%;
+  height: calc(100% - 44rpx);
+  padding: 10rpx 0;
+  box-sizing: border-box;
+  background: #ccc;
+  overflow: hidden;
+}

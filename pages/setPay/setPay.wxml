@@ -1,0 +1,14 @@
+<view class='container_setPay'>
+  <form bindsubmit="setPay">
+    <view class="switch">
+      <view>是否开启密码支付</view>
+      <switch type="switch" checked="{{ checked }}" bindchange="listenerSwitch" />
+    </view>
+    <navigator url="/pages/changePassword/changePassword" class="password">
+      <view>设置密码</view>
+      <view>
+        <text class="iconfont icon-jinru"></text>
+      </view>
+    </navigator>
+  </form>
+</view>

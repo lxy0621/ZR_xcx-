@@ -1,0 +1,189 @@
+.exchange_container {
+  width: 100%;
+  padding: 20rpx;
+  background: #eee;
+}
+
+/* 轮播图 */
+
+swiper {
+  width: 710rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+  transform: translateY(0);
+  overflow: hidden;
+}
+
+swiper image {
+  width: 710rpx;
+  height: 200rpx;
+}
+
+/* 当前积分 */
+
+.current_points {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  overflow: hidden;
+}
+
+.current_points .points {
+  flex: 2;
+  height: 80rpx;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: #fff;
+  padding: 10rpx;
+  font-weight: 600;
+}
+
+.current_points span {
+  color: #e34747;
+}
+
+.current_points .shop_car {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #e34747;
+  padding: 10rpx;
+}
+
+.shop_car span {
+  margin-left: 10rpx;
+  margin-top: 6rpx;
+  width: 36rpx;
+  height: 36rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  text-align: center;
+  line-height: 36rpx;
+  color: #e34747;
+}
+
+/* 兑换中心 */
+
+.exchange {
+  background: #fff;
+  height: calc(100vh - 340rpx);
+  display: flex;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  overflow: hidden;
+}
+
+.exchange .cates-l {
+  flex: 2;
+}
+
+.exchange .cates-l view.active {
+  background: #e34747;
+  color: #fff;
+}
+
+.exchange .cates-r {
+  flex: 3;
+  background: #f9f8f8;
+}
+
+.exchange .cates-l view {
+  height: 80rpx;
+  background: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  border-bottom: 1px solid #eee;
+}
+
+.cates-r {
+  padding: 10rpx;
+}
+
+.cates {
+  width: 100%;
+  height: 160rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cates .cates-ll {
+  flex: 1;
+}
+
+.cates .cates-rr {
+  flex: 2;
+  height: 100%;
+  padding-left: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cates .cates-ll image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.cates .cates-rr .cate_name {
+  color: #222;
+}
+
+.cates .cates-rr .cate_desc {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.cates .cates-rr .cate_integral {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cate_integral .integral {
+  color: #ffa500;
+  line-height: 25rpx;
+}
+
+.integral .t1 {
+  font-size: 50rpx;
+  color: #ffa500;
+  vertical-align: middle;
+}
+
+.integral .t2 {
+  font-size: 28rpx;
+  color: #ffa500;
+  vertical-align: middle;
+}
+
+.cate_integral .count {
+  background: #309cf8;
+  font-size: 24rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+/* 单行显示剩余省略 */
+
+.line1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

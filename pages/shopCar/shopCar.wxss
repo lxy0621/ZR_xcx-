@@ -1,0 +1,121 @@
+.container_shop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #eee;
+  width: 100%;
+  height: 100vh;
+  padding: 20rpx;
+}
+
+.shopCar {
+  width: 100%;
+  height: calc(100vh - 160rpx);
+  /* background: #fff; */
+}
+
+.type {
+  width: 100%;
+  background: #fff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  display: flex;
+  padding: 20rpx;
+}
+
+.type-l {
+  flex: 1;
+}
+
+.type-l image {
+  width: 220rpx;
+  height: 220rpx;
+}
+
+.type-r {
+  flex: 2;
+  display: flex;
+  padding: 0 20rpx;
+  flex-direction: column;
+}
+
+.type-r .title {
+  font-weight: 600;
+}
+
+.type-r .sub {
+  color: #888;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}
+
+.score_edit {
+  margin-top: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score_edit .score {
+  font-size: 32rpx;
+  color: #e34747;
+  font-weight: 600;
+}
+
+.score_edit .edit {
+  display: flex;
+}
+
+.edit .num {
+  display: block;
+  width: 60rpx;
+  height: 40rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.edit .calc {
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  border: 2rpx solid #888;
+  text-align: center;
+  line-height: 40rpx;
+}
+
+.tool {
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+}
+
+.tool .total {
+  flex: 5;
+  background: #fff;
+  line-height: 120rpx;
+  font-weight: 600;
+  background: orange;
+  color: #fff;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.tool .toPay {
+  flex: 2;
+  text-align: center;
+  line-height: 120rpx;
+  background: #e34747;
+  color: #fff;
+  font-weight: 600;
+}
+
+.line1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

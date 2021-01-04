@@ -1,0 +1,115 @@
+<view class="home_container">
+  <!-- Banner -->
+  <swiper indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#ffffff" indicator-dots="{{true}}"
+    autoplay="{{true}}" circular="{{true}}" interval="{{3000}}" duration="{{1000}}">
+    <block wx:for='{{ bannerList }}' wx:key='*this'>
+      <swiper-item>
+        <image url='{{ item.url }}' src="{{ item.image_url }}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 地图 -->
+  <view class="map_content" wx:if='{{ hasLocation == true }}'>
+    <view class="operation">
+      <!-- 操作栏 -->
+      <navigator url="/pages/navigation/navigation" class="location" data-latitude='{{ mapDataList[index].latitude }}'
+        data-longitude='{{ mapDataList[index].longitude }}' data-name='{{mapDataList[index].name }}'
+        bindtap="navigation">
+        <text class="iconfont icon-icon-test"></text>
+      </navigator>
+      <!-- 下拉选项 -->
+      <view class="oper-map">
+        <view class='select_box'>
+          <view class='select' catchtap='selectTap'>
+            <text class='select_text'>{{ mapDataList[index].name }}</text>
+            <image class='select_img {{show&&"select_img_rotate"}}' src='../../assets/images/slide.png'></image>
+          </view>
+          <view class='option_box' style='height:{{show?(mapDataList.length>=5?420:mapDataList.length*86):0}}rpx;'>
+            <text class='option' style='{{ index==stationId-3&&"color:#4c83ff;" }}' wx:for='{{mapDataList}}'
+              wx:key='*this' data-index='{{index}}' catchtap='optionTap'>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 地图 -->
+    <map markers="{{markers}}" latitude="{{ myLatitude }}" longitude="{{ myLongitude }}" scale='14'
+      polyline='{{ polyline }}' include-points="{{ points }}"></map>
+    <!-- 地图信息 -->
+    <view class="message">
+      <span>{{ name }}</span> 距您
+      <span>{{ dir }} </span> 约
+      <span>{{ distance }}</span>
+    </view>
+  </view>
+  <view class="getLocation" wx:else>
+    <image src="../../assets/images/bg.jpg"></image>
+    <button class="locButton" style="width:500rpx;font-size:28rpx;color:#fff;background:#e34747;" bindtap='gotoSetting'
+      hidden="{{ getLocation }}">打开授权设置</button>
+  </view>
+  <!-- 充值优惠 -->
+  <!-- <view class="discount">
+    <view class="title">
+      <view class="title-l">
+        <image mode="widthFix" src="../../assets/images/fire.png"></image>
+        <text>充值优惠</text>
+      </view>
+      <navigator url='/pages/activity/activity' class="title-r" bindtap="toActivity">
+        更多
+        <text>></text>
+      </navigator>
+    </view>
+    <view class="content">
+      <navigator class="nav" url="/pages/payDiscount/payDiscount">
+        <image src="../../assets/images/12.png"></image>
+        <view class="c1">
+          <view>预存1000元</view>
+          <text>返 50</text>
+        </view>
+      </navigator>
+      <navigator class="nav" url="/pages/payDiscount/payDiscount">
+        <image src="../../assets/images/13.png"></image>
+        <view class="c2">
+          <view>预存2000元</view>
+          <text>返 120</text>
+        </view>
+      </navigator>
+      <navigator class="nav" url="/pages/payDiscount/payDiscount">
+        <image src="../../assets/images/14.png"></image>
+        <view class="c3">
+          <view>预存3000元</view>
+          <text>返 200</text>
+        </view>
+      </navigator>
+    </view>
+  </view> -->
+  <!-- 今日价格 -->
+  <view class="today_price">
+    <view class="title">
+      <view class="title-l">
+        <image mode="widthFix" src="../../assets/images/fire.png"></image>
+        <text>今日价格</text>
+      </view>
+    </view>
+    <view wx:if='{{ station_message == 0 }}' class="no_station">暂无数据</view>
+    <view wx:else class="content">
+      <view class="identification">
+        <view class="iden">天然气名称</view>
+        <view class="iden">实际价格</view>
+        <view class="iden">市场价格</view>
+      </view>
+      <block wx:for='{{ station_message }}' wx:key='product_name'>
+        <view class="single">
+          <view class="type">
+            {{item.product_name}}
+          </view>
+          <view class="price">
+            <span>{{ item.real_price }}</span>元/立方米
+          </view>
+          <view class="trend">
+            <span>{{ item.market_price }}</span>元/立方米
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

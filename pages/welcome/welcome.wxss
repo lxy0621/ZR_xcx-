@@ -1,0 +1,351 @@
+page {
+  background: #eee;
+}
+
+.home_container {
+  width: 100%;
+  padding: 20rpx;
+  background: #eee;
+}
+
+/* 轮播图 */
+
+swiper {
+  width: 710rpx;
+  height: 360rpx;
+  border-radius: 10rpx;
+  transform: translateY(0);
+  overflow: hidden;
+}
+
+swiper image {
+  width: 710rpx;
+  height: 360rpx;
+}
+
+/* 地图 */
+
+/* 地图 */
+.map_content {
+  width: 100%;
+  border-radius: 10rpx;
+  overflow: hidden;
+  height: 530rpx;
+  background-color: #fff;
+  padding: 10rpx;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+
+.getLocation {
+  position: relative;
+  width: 100%;
+  height: 530rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  overflow: hidden;
+  display: flex;
+}
+
+.getLocation image {
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+  display: block;
+  width: 100%;
+  height: 530rpx;
+  border-radius: 10rpx;
+  z-index: 5;
+}
+
+.getLocation button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.map_content .operation {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.location {
+  width: 80rpx;
+  height: 80rpx;
+  background: #e34747;
+  border-radius: 8rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location text {
+  font-size: 36rpx;
+}
+
+.oper-map {
+  flex: 5;
+}
+
+.map_content map {
+  width: 100%;
+  height: 360rpx;
+  margin-top: 10rpx;
+}
+
+.map_content .message {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  background: #f4f4f4;
+}
+
+.map_content .message span {
+  color: #e34747;
+}
+
+.select_box {
+  background: #fff;
+  width: calc(100% - 10rpx);
+  float: right;
+  position: relative;
+  z-index: 10;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #efefef;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+.select_text {
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.select_img {
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(180deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 78rpx;
+  width: 100%;
+  border-left: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+}
+
+.option {
+  display: block;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #888;
+  border-bottom: 1px solid #efefef;
+  padding: 10rpx 16rpx;
+  cursor: pointer;
+}
+
+/* 充值优惠 */
+
+.discount {
+  width: 100%;
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 10rpx 0 10rpx 10rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.today_price {
+  width: 100%;
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 10rpx;
+}
+
+/* title start*/
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 10rpx;
+}
+
+.title-l {
+  font-weight: 600;
+}
+
+.title-l image {
+  width: 44rpx;
+  height: 44rpx;
+  vertical-align: bottom;
+}
+
+.title-l text {
+  vertical-align: bottom;
+}
+
+.title-r {
+  font-size: 28rpx;
+  color: #222;
+}
+
+/* title end*/
+
+.discount .content {
+  width: 100%;
+  display: flex;
+  margin-top: 10rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount .content .nav {
+  flex: 1;
+  height: 264rpx;
+  margin-right: 10rpx;
+  position: relative;
+}
+
+.c1,
+.c2,
+.c3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.c1 text,
+.c2 text,
+.c3 text {
+  margin-top: 50rpx;
+  font-size: 36rpx;
+  color: #e34747;
+}
+
+.discount .content .nav .c1 view {
+  width: 85%;
+  height: 50rpx;
+  margin-top: 32rpx;
+  border-radius: 25rpx;
+  background: #f09f12;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.discount .content .nav .c2 view {
+  width: 85%;
+  height: 50rpx;
+  margin-top: 32rpx;
+  border-radius: 25rpx;
+  background: #f9486e;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.discount .content .nav .c3 view {
+  width: 85%;
+  height: 50rpx;
+  margin-top: 32rpx;
+  border-radius: 25rpx;
+  background: #1497f2;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+}
+
+.discount .content .nav image {
+  width: 100%;
+  height: 264rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.today_price {
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.today_price .content {
+  margin-top: 10rpx;
+}
+
+.today_price .content .single {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+
+.today_price .content .single .type {
+  flex: 1;
+}
+
+.today_price .content .single .price {
+  flex: 1;
+}
+
+.today_price .content .single .price span {
+  flex: 1;
+  font-weight: 600;
+  color: #e34747;
+}
+
+.no_station {
+  color: #888;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+}
+
+.identification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iden {
+  color: #888;
+  font-size: 28rpx;
+}
+
+.today_price .content .single .trend {
+  flex: 1;
+  text-align: right;
+}

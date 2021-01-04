@@ -1,0 +1,164 @@
+.binCareDtail {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  padding: 20rpx;
+}
+
+picker {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  line-height: 100rpx;
+  padding: 0 14rpx 0 10rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+}
+
+picker .choose {
+  color: #888;
+  font-size: 28rpx;
+}
+
+picker .chooseNumber {
+  color: #e34747;
+  font-size: 28rpx;
+  float: right;
+}
+
+.chooseNumber text {
+  color: #888;
+  font-size: 28rpx;
+}
+
+.car_number {
+  width: 100%;
+  height: 320rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  background: #fff;
+}
+
+.car_number .car_bd {
+  width: 100%;
+  height: 210rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.car_number .car_tips {
+  color: #888;
+  font-size: 28rpx;
+  width: 100%;
+  text-align: left;
+  padding: 10rpx 0 0 10rpx;
+}
+
+.car_number .tips {
+  width: 100%;
+  height: 60rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 60rpx;
+  color: #ffafaf;
+}
+
+.num_content {
+  width: 480rpx;
+  height: 140rpx;
+}
+
+.numCard {
+  width: 480rpx;
+  height: 140rpx;
+  background: #2b91d5;
+  border-radius: 20rpx;
+  padding: 10rpx;
+}
+
+.numCard .card_border {
+  width: 100%;
+  height: 100%;
+  border-radius: 18rpx;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_border .s1 {
+  color: #fff;
+  font-size: 48rpx;
+  padding-right: 20rpx;
+  letter-spacing: 8rpx;
+  border-bottom: 4rpx solid #fff;
+}
+
+.card_border .s2 {
+  color: #fff;
+  font-size: 56rpx;
+}
+
+.card_border .s3 {
+  color: #fff;
+  font-size: 48rpx;
+  padding-left: 20rpx;
+  letter-spacing: 8rpx;
+  border-bottom: 4rpx solid #fff;
+}
+
+.carPay {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  display: flex;
+  padding: 0 10rpx;
+}
+
+.carPay .pay_tips {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.pay_tips .tips1 {
+  font-size: 28rpx;
+  color: #888;
+}
+
+.pay_tips .tips2 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+
+.carPay .switch {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.view_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bind_button {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e34747;
+  position: fixed;
+  bottom: 120rpx;
+  font-weight: 400;
+}

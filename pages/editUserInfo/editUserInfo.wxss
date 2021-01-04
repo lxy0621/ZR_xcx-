@@ -1,0 +1,43 @@
+.editContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.editContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  width: 100%;
+  height: 100rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+
+.editSubmit {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e34747;
+  position: fixed;
+  bottom: 120rpx;
+  font-weight: 400;
+}

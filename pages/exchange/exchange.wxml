@@ -1,0 +1,48 @@
+<view class="exchange_container">
+  <!-- Banner -->
+  <swiper indicator-color="rgba(255, 255, 255, .3)" indicator-active-color="#ffffff" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="{{3000}}" duration="{{1000}}">
+    <block wx:for='{{ bannerList }}' wx:key='*this'>
+      <swiper-item>
+        <image url='{{ item.url }}' src="{{ item.image_url }}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 当前积分 -->
+  <view class="current_points">
+    <view class="points">当前可用积分
+      <span> {{ detail_balance }} </span>分</view>
+    <navigator url="/pages/shopCar/shopCar" class="shop_car">购物车
+      <span>{{ total }}</span>
+    </navigator>
+  </view>
+  <!-- 兑换中心 -->
+  <view class="exchange">
+    <!-- 左侧 -->
+    <scroll-view scroll-y='{{true}}' class="cates-l">
+      <block wx:for='{{cates}}' wx:key='id'>
+        <view class="{{activeIndex === index ? 'active':''}}" bind:tap="clickMenu" data-index="{{index}}">{{item.view_name}}</view>
+      </block>
+    </scroll-view>
+    <!-- 右侧 -->
+    <scroll-view scroll-y='{{true}}' class="cates-r">
+      <block wx:for='{{ category }}' wx:key='id'>
+        <view class="cates">
+          <view class="cates-ll">
+            <image mode="widthFix" src="../../assets/images/shop.png"></image>
+          </view>
+          <view class="cates-rr">
+            <view class="cate_name line1">{{ item.title }}</view>
+            <view class="cate_desc line1">{{ item.substract }}</view>
+            <view class="cate_integral">
+              <view class="integral">
+                <text class="iconfont icon-jifen t1" />
+                <text class="t2">{{ item.score }}</text>
+              </view>
+              <view class="count" data-id='{{ item.id }}' data-title='{{ item.title }}' data-substract='{{ item.substract }}' data-score='{{ item.score }}' bindtap="addShopCar">加入购物车</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

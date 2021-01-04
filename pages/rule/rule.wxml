@@ -1,0 +1,21 @@
+<view class='rule'>
+  <view class="content">
+    <view class="rule-logo">
+      <image class="logo_pic" src="../../assets/images/logo-01.png"></image>
+    </view>
+    <view class="title">会员卡规则</view>
+    <view class="words">
+      <view>
+        <text class="iconfont icon-dian"></text>权益说明：可参与会员专享活动，具体参考活动参与规则;</view>
+      <view>
+        <text class="iconfont icon-dian"></text>有效期：可参与会员专享活动，具体参考活动参与规则;</view>
+    </view>
+    <view class="title">使用须知</view>
+    <view class="words">
+      <view>
+        <text class="iconfont icon-dian"></text>每人每类油品限领一张油卡;</view>
+      <view>
+        <text class="iconfont icon-dian"></text>汽油卡仅能加汽油使用，柴油卡仅能加柴油使用，汽柴油卡可加汽油和柴油使用，CNG卡仅能加天然气使用，具体使用方法请咨询油站工作人员。</view>
+    </view>
+  </view>
+</view>

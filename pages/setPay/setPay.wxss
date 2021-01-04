@@ -1,0 +1,29 @@
+.container_setPay {
+  width: 100%;
+  height: 100vh;
+  background: #eee;
+  padding: 20rpx;
+}
+
+.switch {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.password {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rpx;
+}

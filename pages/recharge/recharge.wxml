@@ -1,0 +1,33 @@
+<view class='container-pay'>
+  <view class="pay_message">
+    <view class="pay_cardType">
+      <view class="tips">您当前充值的卡类型:</view>
+      <view class="payData">{{card_name}}</view>
+    </view>
+    <view class="pay_number">
+      <view class="tips">您当前充值的卡号为:</view>
+      <view class="payData">{{card_number}}</view>
+    </view>
+    <view class="pay_balance">
+      <view class="tips">您当前卡内余额:</view>
+      <view class="payData">￥ {{card_balance}}</view>
+    </view>
+  </view>
+  <form bindsubmit="recharge">
+    <view class="money_descbd">
+      <view class="money_desc">充值金额（元）[注：单笔最高充值限额为5000元]</view>
+    </view>
+    <input class="money" type="digit" maxlength="7" value='{{recharge_money}}' bindinput='moneyInput' placeholder="请输入充值金额"></input>
+    <!-- 支付方式 -->
+    <view class="pay_type">
+      <view class="type_l">支付方式</view>
+      <view class="type_r">
+        <text>微信</text>
+        <image mode="widthFix" src="../../assets/images/weixin_1.png"></image>
+      </view>
+    </view>
+    <view class="pay_view">
+      <button style="width:700rpx;height:92rpx;border-radius:46rpx" class="pay" form-type="submit">充值</button>
+    </view>
+  </form>
+</view>

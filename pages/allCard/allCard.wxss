@@ -1,0 +1,165 @@
+/* 电子会员卡 */
+
+.ele_card {
+  width: 100%;
+  height: 100vh;
+  padding: 20rpx 20rpx;
+  background: #eee;
+}
+
+.card-container {
+  width: 100%;
+  height: 880rpx;
+}
+
+.card-content {
+  width: calc(100% - 4rpx);
+  height: 280rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  border: 6rpx solid transparent;
+}
+
+.card-active {
+  width: calc(100% - 4rpx);
+  height: 280rpx;
+  padding: 12rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  border: 6rpx solid #e34747;
+}
+
+.card-active:before {
+  content: '\e619';
+  font-family: "iconfont" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 10;
+  font-size: 28rpx;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48rpx;
+  height: 36rpx;
+  background: #e34747;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_bf {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280rpx;
+}
+
+.card_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 280rpx;
+}
+
+.card_bg image {
+  width: 100%;
+  height: 280rpx;
+}
+
+.card_bf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20rpx;
+  color: #fff;
+}
+
+.card_bf .card_t {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_t .card_name {
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.card_t .card_num {
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.card_bf .card_m {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_bf .card_m .card_balance {
+  color: #fdd360;
+  font-size: 52rpx;
+}
+
+.card_bf .card_m .card_pay {
+  width: 180rpx;
+  height: 54rpx;
+  border-radius: 27rpx;
+  font-size: 24rpx;
+  color: #1a00a6;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_bf .card_b {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.view_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips {
+  color: #888;
+  font-size: 28rpx;
+  text-align: center;
+  margin: 10rpx 0;
+}
+
+.bind_button {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e34747;
+  position: fixed;
+  bottom: 120rpx;
+  font-weight: 400;
+}

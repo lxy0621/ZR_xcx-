@@ -1,0 +1,28 @@
+<!-- 头部信息 -->
+<view class='points_header'>
+  <view class="header_message">
+    <view class="points">{{ detail_balance }}</view>
+    <view class="desc">- 我的积分 -</view>
+  </view>
+  <view class="header_tab">
+    <navigator url="/pages/pointRule/pointRule" class="tab_l">积分规则</navigator>
+    <navigator url="/pages/pointDetail/pointDetail" class="tab_r">积分明细</navigator>
+  </view>
+</view>
+<!-- 商品信息 -->
+<view class="shop_message">
+  <!-- 推荐兑换 -->
+  <view class="recommend">
+    <view class="title">
+      <view class="title-l">
+        <image mode="widthFix" src="../../assets/images/fire.png"></image>
+        <text>推荐兑换</text>
+      </view>
+      <view class="title-r">爆品兑换 惊喜连连</view>
+    </view>
+    <scroll-view scroll-x='{{ true }}' class="rec_content"></scroll-view>
+  </view>
+  <!-- 全部兑换 -->
+  <scroll-view>
+  </scroll-view>
+</view>

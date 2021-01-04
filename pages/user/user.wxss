@@ -1,0 +1,288 @@
+/* 头部 */
+
+.user_header {
+  position: relative;
+  width: 100%;
+  height: 360rpx;
+  background-image: linear-gradient(#e25353, #f57d7d);
+  padding-top: 32rpx;
+}
+
+.userInfo {
+  width: 100%;
+  padding: 0 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headPic image {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 90rpx;
+  border: 6rpx solid #feb2b2;
+}
+
+.nickName text {
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.mobile text {
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.edit {
+  position: absolute;
+  top: 0;
+  right: 20rpx;
+}
+
+.edit text {
+  font-size: 56rpx;
+  color: #fff;
+}
+
+.jy_body {
+  position: absolute;
+  bottom: -50rpx;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: calc(100% - 40rpx);
+  height: 100rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  box-shadow: 2rpx 2rpx 6rpx 1rpx #eee;
+  display: flex;
+  padding: 12rpx 0;
+}
+
+.jy_body .integral {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2rpx solid #eee;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+.jy_body .coupon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+/* 主体 */
+
+.user_container {
+  width: 100%;
+  height: calc(100vh - 360rpx);
+  padding: 80rpx 20rpx 40rpx 20rpx;
+  background: #eee;
+}
+
+.eleCard {
+  width: 100%;
+}
+
+.ele_title {
+  width: 100%;
+  height: 40rpx;
+  margin-bottom: 6rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.ele_title .title-l {
+  font-weight: 500;
+}
+
+.ele_title .title-r {
+  font-size: 28rpx;
+  vertical-align: center;
+}
+
+.card-content {
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.card_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+}
+
+.card_bg image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.card_message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300rpx;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.card_message .message_t {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.message_t .card_name {
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.message_t .card_num {
+  color: #fff;
+  font-size: 28rpx;
+}
+
+.card_message .message_m {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message_m .card_balance {
+  color: #fdd360;
+  font-size: 52rpx;
+}
+
+.message_m .card_pay {
+  width: 180rpx;
+  height: 54rpx;
+  border-radius: 27rpx;
+  font-size: 24rpx;
+  color: #1a00a6;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_message .message_b {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 28rpx;
+}
+
+/* 绑定车牌号 */
+
+.bind_car {
+  width: 100%;
+  height: 120rpx;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+  background-image: linear-gradient(to right,#e26060, #f57d7d);
+  display: flex;
+}
+
+.bind_car .car-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bind_car .car-logo image {
+  width: 70rpx;
+}
+
+.bind_car .car-message {
+  flex: 3;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.car-message .message_title {
+  font-size: 24rpx;
+  font-weight: 600;
+}
+
+.car-message .message_desc {
+  font-size: 24rpx;
+}
+
+.bind_car .car-btn {
+  flex: 1;
+  background: #e26060;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+
+/* 其他 */
+
+.another {
+  width: 100%;
+  margin-top: 20rpx;
+  height: 240rpx;
+}
+
+.ano_title {
+  height: 40rpx;
+  margin-bottom: 10rpx;
+  font-weight: 500;
+}
+
+.ano-content {
+  height: 160rpx;
+  display: flex;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 10rpx;
+}
+
+.ano_logo {
+  width: 72rpx;
+  height: 72rpx;
+  margin-bottom: 10rpx;
+}
+
+.content-text {
+  font-size: 28rpx;
+}
+
+.ano-content .content_l {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

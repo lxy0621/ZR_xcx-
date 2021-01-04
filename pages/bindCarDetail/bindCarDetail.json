@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "carKeyboard": "/components/carKeyboard/carKeyboard"
+  },
+  "navigationBarTitleText": "添加绑定车辆"
+}

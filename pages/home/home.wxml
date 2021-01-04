@@ -1,0 +1,9 @@
+<view class="welcome">
+  <view class="logo_bd">
+    <image class="logo" mode="aspectFit" src="../../assets/images/zgrq.png"></image>
+  </view>
+  <view class="loading_bg">
+    <image class="loading" mode="widthFix" src="../../assets/images/loading.gif"></image>
+    <text>正在进入</text>
+  </view>
+</view>

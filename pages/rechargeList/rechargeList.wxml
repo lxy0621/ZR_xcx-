@@ -1,0 +1,22 @@
+<view class="rechargeList">
+  <!-- 内容部分 -->
+  <scroll-view scroll-y="true" class="allRechargeList">
+    <block wx:for='{{allRechargeRecord}}' wx:key='recharge_order_id'>
+      <navigator class="rechargeType" url="/pages/rechargeListDetail/rechargeListDetail?id={{item.recharge_order_id}}">
+        <view class="type-l">
+          <view>{{ item.card_type_display }}</view>
+        </view>
+        <view class="type-m">
+          <view>{{ item.card_name }}</view>
+          <view class="date">{{ item.recharge_date }}</view>
+        </view>
+        <view class="type-r">
+          <view class="state" style="color:{{ item.order_state_color }}">{{ item.order_state_display }}</view>
+          <view>￥{{ item.recharge_money }}</view>
+        </view>
+      </navigator>
+    </block>
+    <view wx:if='{{ hasMore }}' class="loadmore loading">正在加载...</view>
+    <view wx:else class="loadmore">暂无更多充值记录</view>
+  </scroll-view>
+</view>

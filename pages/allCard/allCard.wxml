@@ -1,0 +1,29 @@
+<!-- 电子会员卡 -->
+<view class="ele_card">
+  <view class="tips">请设置您的常用会员卡</view>
+  <scroll-view scroll-y='{{ true }}' class="card-container">
+    <block wx:for='{{ allCard }}' wx:key='id'>
+      <view class="card-content" class="{{activeIndex === index ? 'card-active':'card-content'}}" bindtap="clickCard" data-index='{{ index }}' style="background-image:url({{ bg_pic[item.card_meta_id-1].bg_img }});background-size:100% 100%">
+        <view class="card_bf">
+          <view class="card_t">
+            <view class="card_name">{{ item.card_name }}</view>
+            <view class="card_num">{{ item.card_no }}</view>
+          </view>
+          <view class="card_m">
+            <view class="card_balance">￥{{ item.total_balance }}</view>
+            <navigator url="/pages/recharge/recharge?id={{ item.id }}&number={{ item.card_no }}&name={{ item.card_name }}&balance={{ item.total_balance }}" class="card_pay">立即充值</navigator>
+          </view>
+          <view class="card_b">
+            <view>中燃集团</view>
+            <navigator url="/pages/rule/rule">
+              规则<text class="iconfont icon-triangle-right" />
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <view class="view_button">
+    <button url="/pages/user/user?id={{ activeIndex }}" style="width:700rpx;height:92rpx;border-radius:46rpx" class="bind_button" bindtap="setHeadCard">设置</button>
+  </view>
+</view>

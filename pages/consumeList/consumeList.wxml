@@ -1,0 +1,28 @@
+<view class="consume_container">
+  <view class="list">
+    <view class="all_spend">
+      <view class="spend1">已消费</view>
+      <view class="spend2"><strong>{{totalNumber}}笔</strong></view>
+    </view>
+    <view class="all_pay">
+      <view class="pay1">总支付</view>
+      <view class="pay2"><strong>{{totalMoney}}元</strong></view>
+    </view>
+  </view>
+  <scroll-view scroll-y='true' upper-threshold='40' class="content">
+    <block wx:for='{{ consumeList }}' wx:key='id'>
+      <navigator url="/pages/consumeListDetail/consumeListDetail?id={{item.consume_order_id}}" class="record">
+        <view class="record-l">
+          <text>{{item.product_name}}</text>
+          <text class="record_name">{{ item.station_name }}</text>
+          <text class="date">{{item.trans_time}}</text>
+        </view>
+        <view class="record-r">
+          <text>￥{{item.money}}</text>
+        </view>
+      </navigator>
+    </block>
+    <view wx:if='{{ hasMore }}' class="loadmore loading">上拉加载更多</view>
+    <view wx:else class="loadmore">暂无更多消费记录</view>
+  </scroll-view>
+</view>

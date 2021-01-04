@@ -1,0 +1,23 @@
+<view class="container-login">
+  <view class="login">
+    <image mode="widthFix" src="../../assets/images/zgrq2.png"></image>
+  </view>
+  <view class="disc" wx:if='{{ hid1 == false }}'>
+    <view class="title">中国燃气即将执行手机信息授权</view>
+    <view class="content">· 使用您的手机号码信息</view>
+    <view class="content">· 请确认是本人操作</view>
+  </view>
+  <view class="disc" wx:else>
+    <view class="title">中国燃气即将执行授权登录</view>
+    <view class="content">· 使用您的账号登录该应用</view>
+    <view class="content">· 使用您的头像和昵称</view>
+    <view class="content">· 请确认是本人操作</view>
+  </view>
+  <!-- 获取授权 -->
+  <view class="sq_view">
+    <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" plain="{{ true }}" hidden="{{ hid1 }}"
+      class="sq_btn2" style="width:calc(100% - 120rpx);height:92rpx;border-radius:46rpx">获取手机号权限</button>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain="{{ true }}" hidden="{{ hid2 }}" class="sq_btn1"
+      style="width:calc(100% - 120rpx);height:92rpx;border-radius:46rpx">获取用户登录授权</button>
+  </view>
+</view>

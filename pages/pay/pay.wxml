@@ -1,0 +1,26 @@
+<view class="tips iconfont icon-icon_jinggao"> 为了您的安全，请勿站内使用手机</view>
+<view class="container_pay">
+  <view class="qr_code">
+    <canvas class="canvas-code" canvas-id="myQrcode" style="background:#fff;width:240px;height: 240px;" />
+  </view>
+  <view class="modify" wx:if='{{ is_set_password == 0 }}' bindtap="toSetPay">
+    密码支付设置
+    <text class="iconfont icon-triangle-right" />
+  </view>
+  <view class="vip_card">
+    <view class="content">
+      <block wx:for='{{canUseCard}}' wx:key='id'>
+        <view class="card" style="background-image:url({{ bg_pic[item.card_meta_id-1].bg_img }});background-size:100% 100%">
+          <view class="card-t">
+            <view class="card_name">{{ item.card_name }}</view>
+            <view class="card_no">{{ item.card_no }}</view>
+          </view>
+          <view class="card-b">
+            <view class="total_balance">￥{{ item.total_balance }}</view>
+            <navigator url="/pages/recharge/recharge?id={{ item.id }}&number={{ item.card_no }}&name={{ item.card_name }}&balance={{ item.total_balance }}" class="card_pay">立即充值</navigator>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

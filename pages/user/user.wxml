@@ -1,0 +1,91 @@
+<!-- 头部 -->
+<view class='user_header'>
+  <view class="userInfo">
+    <view class="headPic">
+      <image mode="widthFix" src="{{ userInfo.avatar_url }}"></image>
+    </view>
+    <view class="nickName">
+      <text>{{ userInfo.nickname }}</text>
+    </view>
+    <view class="mobile">
+      <text>{{ userInfo.mobile }}</text>
+    </view>
+  </view>
+  <!-- 编辑资料 -->
+  <view class="edit">
+    <navigator url="/pages/editUserInfo/editUserInfo?name={{ userInfo.nickname }}">
+      <text class="iconfont icon-bianji"></text>
+    </navigator>
+  </view>
+  <view class="jy_body">
+    <!-- bindtap="toPoints" -->
+    <view class="integral">积分(0)</view>
+    <!-- bindtap="toCoupon" -->
+    <view class="coupon">优惠券(0)</view>
+  </view>
+</view>
+<!-- 主体 -->
+<view class="user_container">
+  <!-- 电子会员卡 -->
+  <view class="eleCard">
+    <view class="ele_title">
+      <view class="title-l">电子会员卡</view>
+      <navigator url="/pages/allCard/allCard" class="title-r">查看全部></navigator>
+    </view>
+    <view class="card-content" style="background-image:url({{ bg_pic[card.card_meta_id-1].bg_img }});background-size:100% 100%">
+      <view class="card_message">
+        <view class="message_t">
+          <view class="card_name">{{ card.card_name }}</view>
+          <view class="card_num">{{ card.card_no }}</view>
+        </view>
+        <view class="message_m">
+          <view class="card_balance">￥{{ card.total_balance }}</view>
+          <navigator url="/pages/recharge/recharge?id={{ card.id }}&number={{ card.card_no }}&name={{ card.card_name }}&balance={{ card.total_balance }}" class="card_pay">立即充值</navigator>
+        </view>
+        <view class="message_b">
+          <view>中燃集团</view>
+          <view bindtap="toRule">
+            规则
+            <text class="iconfont icon-triangle-right" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 绑定车牌号 -->
+  <view class="bind_car">
+    <view class="car-logo">
+      <image mode="aspectFit" src="../../assets/images/bindcar.png"></image>
+    </view>
+    <view class="car-message">
+      <view class="message_title">绑定车牌号</view>
+      <view class="message_desc">绑定车牌后可以通过扫车牌支付</view>
+    </view>
+    <navigator url="/pages/bindCar/bindCar" class="car-btn">
+      <view>已绑定</view>
+      <view>{{ carTotal }}辆</view>
+    </navigator>
+  </view>
+  <!-- 其他 -->
+  <view class="another">
+    <view class="ano_title">更多功能</view>
+    <view class="ano-content">
+      <view class="content_l" bindtap="toRechargeList">
+        <image class="ano_logo" mode="widthFix" src="../../assets/images/card.png"></image>
+        <text class="content-text">充值记录</text>
+      </view>
+      <view class="content_l" bindtap="toConsumeList">
+        <image class="ano_logo" mode="widthFix" src="../../assets/images/qianbao.png"></image>
+        <text class="content-text">消费记录</text>
+      </view>
+      <navigator class="content_l" url="/pages/bindMobile/bindMobile?phoneNum={{ userInfo.mobile }}">
+        <image class="ano_logo" mode="widthFix" src="../../assets/images/mobilenum.png"></image>
+        <text class="content-text">修改手机</text>
+      </navigator>
+      <view class="content_l" bindtap="toSetPay">
+        <image class="ano_logo" mode="widthFix" src="../../assets/images/jiasetting.png"></image>
+        <text class="content-text">支付设置</text>
+      </view>
+    </view>
+  </view>
+</view>

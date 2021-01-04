@@ -1,0 +1,80 @@
+page {
+  background-color: #eee;
+}
+
+.rechargeList {
+  width: 100%;
+  padding: 0 20rpx;
+  background: #eee;
+}
+
+.allRechargeList {
+  width: 100%;
+  background: #eee;
+}
+
+.rechargeType {
+  width: 100%;
+  height: 140rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  margin-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 20rpx;
+}
+
+.rechargeType .type-l {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-l view {
+  width: 100rpx;
+  height: 60rpx;
+  background: #e34747;
+  color: #fff;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+
+.rechargeType .type-m {
+  flex: 4;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.type-m .date {
+  color: #888;
+}
+
+.rechargeType .type-r {
+  flex: 1.5;
+  font-size: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.rechargeType .type-r .state {
+  font-size: 28rpx;
+}
+
+.loadmore {
+  color: #888;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+}

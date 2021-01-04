@@ -1,0 +1,44 @@
+<view class="binCareDtail">
+  <form bindsubmit="bindCar">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{cardMenu}}">
+      <view class="picker">
+        <text class="choose">请选择卡号：</text>
+        <text class="chooseNumber" wx:if='{{ clickCardList == false }}'>{{ card_no }} <text class="iconfont icon-xiala"></text></text>
+        <text class="chooseNumber" wx:else>{{ cardMenu[index] }} <text class="iconfont icon-xiala"></text></text>
+      </view>
+    </picker>
+    <!-- 绑定车牌号 -->
+    <view class="car_number">
+      <view class="car_tips">请输入车牌号:</view>
+      <view class="car_bd">
+        <view class="num_content" bindtap="inputCarNum">
+          <view class="numCard">
+            <view class="card_border">
+              <span class="s1">{{ car_num1 }}</span>
+              <span class="s2">·</span>
+              <span class="s3">{{ car_num2 }}</span>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="tips">- 点击车牌图标绑定,请输入真实有效的车牌号 -</view>
+    </view>
+    <!-- 车牌付 -->
+    <view class="carPay">
+      <view class="pay_tips">
+        <view class="tips1">车牌付</view>
+        <view class="tips2">开启后，付款仅需识别车牌</view>
+      </view>
+      <view class="switch">
+        <switch type="switch" checked="{{ enable }}" bindchange="listenerSwitch" />
+      </view>
+    </view>
+    <view class="view_button">
+      <button class="bind_button" form-type="submit" style="width:700rpx;height:92rpx;border-radius:46rpx" bindtap="toSubmit">确认修改</button>
+    </view>
+  </form>
+  <!-- 键盘 -->
+  <block wx:if="{{showKeyboard}}">
+    <carKeyboard carNum="{{carNum}}" bind:onOk="onOk" bind:onCancel="onCancel" />
+  </block>
+</view>

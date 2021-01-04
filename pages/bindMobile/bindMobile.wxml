@@ -1,0 +1,8 @@
+<view class="bindMobile">
+  <form bindsubmit="bindMobile" class="bindContent">
+    <input class="mobile" name="mobile" type="number" maxlength="11" placeholder="{{ mobile }}"></input>
+    <view class="btn">
+      <button form-type="submit" class="submitMobile" style="width:700rpx;height:92rpx;border-radius:46rpx">提交</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/auth/auth",
+    "pages/welcome/welcome",
+    "pages/pay/pay",
+    "pages/exchange/exchange",
+    "pages/shopCar/shopCar",
+    "pages/user/user",
+    "pages/bindCar/bindCar",
+    "pages/allCard/allCard",
+    "pages/bindCarDetail/bindCarDetail",
+    "pages/bindChange/bindChange",
+    "pages/activity/activity",
+    "pages/changePassword/changePassword",
+    "pages/setPay/setPay",
+    "pages/rule/rule",
+    "pages/trend/trend",
+    "pages/recharge/recharge",
+    "pages/coupon/coupon",
+    "pages/rechargeList/rechargeList",
+    "pages/rechargeListDetail/rechargeListDetail",
+    "pages/consumeList/consumeList",
+    "pages/consumeListDetail/consumeListDetail",
+    "pages/points/points",
+    "pages/pointDetail/pointDetail",
+    "pages/editUserInfo/editUserInfo",
+    "pages/bindMobile/bindMobile",
+    "pages/payDiscount/payDiscount"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "呼市中燃清洁能源",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/welcome/welcome",
+        "text": "首页",
+        "iconPath": "./assets/images/index.png",
+        "selectedIconPath": "./assets/images/index-active.png"
+      },
+      {
+        "pagePath": "pages/pay/pay",
+        "text": "付款码",
+        "iconPath": "./assets/images/pay.png",
+        "selectedIconPath": "./assets/images/pay-active.png"
+      },
+      {
+        "pagePath": "pages/exchange/exchange",
+        "text": "兑换",
+        "iconPath": "./assets/images/exchange.png",
+        "selectedIconPath": "./assets/images/exchange-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./assets/images/user.png",
+        "selectedIconPath": "./assets/images/user-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置将用于小程序使用"
+    }
+  }
+}
